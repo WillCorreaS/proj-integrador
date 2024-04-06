@@ -1,12 +1,8 @@
 /*cor do cabeçalho e rodapé = #000000
 cor da fote = #1f1f1f
-
 h2 = Anton
 p = Inter
-
 */
-
-
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@100..900&display=swap');
 
@@ -14,9 +10,16 @@ p = Inter
 
 html {font-size: 16px;}
 
+h1, h2 {font-family: "Anton",}
+
+header h1 {font-size: 2rem; margin: 0;}
+
+header form {display: flex; align-items: center;}
+
 body {
     font-family: "Inter",Arial, sans-serif;
-    margin: 0;
+    margin: auto;
+    max-width: 800px;
     padding: 0;
     color: #FFFFFF;
     background-image: url(/imagens/imagen-de-fundo\ 1.png);
@@ -24,127 +27,8 @@ body {
     background-size: cover;
 }
 
-header {
-    background-color: #1f1f1f;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-}
+.logotipo {height: 60px; border-radius: 50%;}
 
-h1, h2 {font-family: "Anton",}
-
-header h1 {
-    font-size: 2rem;
-    margin: 0;
-}
-
-header form {
-    display: flex;
-    align-items: center;
-}
-
-.logotipo {
-    height: 60px;
-    border-radius: 50%;
-}
-
-header input {
-    border: 1px solid #ccc;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin-right: 10px;
-}
-
-header button {
-    background-color: #000;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-main {
-    text-align: center;
-    padding: 20px;
-}
-
-.generos {
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-.generos h2 {
-    margin-bottom: 10px;
-}
-
-.generos ul {
-    list-style: none;
-    padding: 0;
-}
-
-.generos li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.generos li a {
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
-.redes-sociais {
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-.redes-sociais h2 {
-    margin-bottom: 10px;
-}
-
-.redes-sociais ul {
-    list-style: none;
-    padding: 0;
-}
-
-.redes-sociais li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.redes-sociais li a {
-    color: #000;
-}
-
-.redes-sociais li i {
-    font-size: 24px;
-}
-
-/*Estilizando o Carousel de imagens */
-
-.carousel {
-    width: 80%;
-    overflow: hidden;
-    position: relative;
-    
-
-}
-
-.carousel-inner {
-
-    white-space: nowrap;
-    transition: transform 0.8s ease;
-}
-
-.carousel-inner img {
-    width: 80%;
-    /* display: inline-block; */
-    filter: blur(2px);
-}
-
-.carousel-inner img.active {
-    filter: none;
+figure img {
+    transform: scale(10px);
 }
