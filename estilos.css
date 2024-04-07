@@ -1,4 +1,4 @@
-/*cor do cabeçalho e rodapé = #000000
+/*cor do cabeçalho e rodapé = #141414
 cor da fote = #1f1f1f
 h2 = Anton
 p = Inter
@@ -14,46 +14,82 @@ h1, h2 {font-family: "Anton",}
 
 header h1 {font-size: 2rem; margin: 0;}
 
+header div {
+    background-color: #141414;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+header {
+    background-attachment: fixed;
+    position: sticky;
+    top: 0;
+    z-index: 150;
+}
+
 header form {display: flex; align-items: center;}
 
 body {
     font-family: "Inter",Arial, sans-serif;
-    margin: auto;
-    max-width: 800px;
     padding: 0;
+    min-width: none;
     color: #FFFFFF;
     background-image: url(/imagens/imagen-de-fundo\ 1.png);
     background-attachment: fixed;
     background-size: cover;
 }
 
+.container {
+    text-align: center;
+    max-width: 800px;
+    min-width: 280px;
+    margin: auto;
+  }
+
+
+
 .logotipo {height: 60px; border-radius: 50%;}
 
-figure img {
-    width:200px;
-    
-}
+
+
+
+
+
+
+
+
+
 
 /*Para tratar do Carrosel de imagens*/
 
 .carousel-container {
+    /* background-color: yellow; */
     position: relative;
     overflow: hidden;
-    width: 100%;
+    /* gap: 1px; */
+    width: 80%;
   }
   .carousel {
     display: flex;
   }
   .carousel-item {
+
     flex: 0 0 auto;
     width: 100%;
+    padding: 10px;
+    max-width: 100%;
+    min-width: 150px;
   }
   .carousel img {
     width: 100%;
     height: auto;
   }
-  .carousel-prev,
-  .carousel-next {
+
+   .carousel-prev, .carousel-next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -64,11 +100,17 @@ figure img {
     cursor: pointer;
     font-size: 20px;
     z-index: 1;
-  }
+  } 
   .carousel-prev {
-    left: 10px;
+    left: -3px;
   }
   .carousel-next {
-    right: 10px;
+    right: -3px;
   }
   
+ .button-prev-next {
+    /* color:cornflowerblue; */
+    display: flex;
+    justify-content: space-between;
+ }
+
