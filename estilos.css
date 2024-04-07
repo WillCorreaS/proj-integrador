@@ -30,5 +30,6 @@ body {
 .logotipo {height: 60px; border-radius: 50%;}
 
 figure img {
-    transform: scale(10px);
+    width:200px;
+    
 }
