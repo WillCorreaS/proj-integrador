@@ -33,3 +33,42 @@ figure img {
     width:200px;
     
 }
+
+/*Para tratar do Carrosel de imagens*/
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  .carousel {
+    display: flex;
+  }
+  .carousel-item {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .carousel img {
+    width: 100%;
+    height: auto;
+  }
+  .carousel-prev,
+  .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 1;
+  }
+  .carousel-prev {
+    left: 10px;
+  }
+  .carousel-next {
+    right: 10px;
+  }
+  
